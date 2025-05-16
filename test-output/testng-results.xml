@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-16T15:35:38 IST" name="Automation Practice Test Suite" finished-at="2025-05-16T15:36:45 IST" duration-ms="66220">
+    <groups>
+      <group name="sanity">
+        <method signature="LoginTest.loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" name="loginTest" class="com.ui.tests.LoginTest"/>
+      </group> <!-- sanity -->
+      <group name="e2e">
+        <method signature="LoginTest.loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" name="loginTest" class="com.ui.tests.LoginTest"/>
+      </group> <!-- e2e -->
+    </groups>
+    <test started-at="2025-05-16T15:35:38 IST" name="UI Automation Test" finished-at="2025-05-16T15:36:45 IST" duration-ms="66220">
+      <class name="com.ui.tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:35:39 IST" name="setup" description="Load the HomePage of the website" finished-at="2025-05-16T15:36:09 IST" duration-ms="30467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:36:09 IST" name="loginTest" description="Verifies if the valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2025-05-16T15:36:12 IST" duration-ms="3258" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=kunrajpurohit1@gmail.com, password=Password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9f027dbb68c079a4f0dcd5a3c1ea8ca3, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f027dbb68c079a4f0dcd5a3c1ea8ca3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9f027dbb68c079a4f0dcd5a3c1ea8ca3, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f027dbb68c079a4f0dcd5a3c1ea8ca3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:127)
+at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
+at com.ui.tests.LoginTest.loginTest(LoginTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:36:13 IST" name="tearDown" description="Tear Down the Browser" finished-at="2025-05-16T15:36:14 IST" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:36:14 IST" name="setup" description="Load the HomePage of the website" finished-at="2025-05-16T15:36:40 IST" duration-ms="26284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(com.ui.pojos.User)[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:36:40 IST" name="loginTest" description="Verifies if the valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2025-05-16T15:36:44 IST" duration-ms="3498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=toridip462@minduls.com, password=Password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4f5991f6]" started-at="2025-05-16T15:36:44 IST" name="tearDown" description="Tear Down the Browser" finished-at="2025-05-16T15:36:45 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ui.tests.LoginTest -->
+    </test> <!-- UI Automation Test -->
+  </suite> <!-- Automation Practice Test Suite -->
+</testng-results>
