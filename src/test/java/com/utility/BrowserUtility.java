@@ -75,7 +75,7 @@ public class BrowserUtility {
 			if (isHeadless) {
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--headless=old");
-				
+
 				driver.set(new EdgeDriver(options));
 			} else {
 				driver.set(new EdgeDriver());
@@ -131,7 +131,7 @@ public class BrowserUtility {
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
 		String timeStamp = format.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name + " - " + timeStamp + ".png";
+		String path = "./screenshots/" + name + " - " + timeStamp + ".png";
 		File screenshotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenshotData, screenshotFile);
@@ -139,6 +139,11 @@ public class BrowserUtility {
 			e.printStackTrace();
 		}
 		return path;
+	}
+
+	public void quit() {
+		driver.get().quit();
+
 	}
 
 }
